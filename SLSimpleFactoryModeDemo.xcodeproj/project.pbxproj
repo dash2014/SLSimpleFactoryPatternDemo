@@ -21,6 +21,10 @@
 		C8083B081994CC1900294795 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8083AEA1994CC1900294795 /* UIKit.framework */; };
 		C8083B101994CC1900294795 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8083B0E1994CC1900294795 /* InfoPlist.strings */; };
 		C8083B121994CC1900294795 /* SLSimpleFactoryModeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8083B111994CC1900294795 /* SLSimpleFactoryModeDemoTests.m */; };
+		C8083B2019986F6100294795 /* HumanFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C8083B1F19986F6100294795 /* HumanFactory.m */; };
+		C8083B2319986F7F00294795 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = C8083B2219986F7F00294795 /* Human.m */; };
+		C8083B2619986F9300294795 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = C8083B2519986F9300294795 /* Student.m */; };
+		C8083B2919986FA000294795 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = C8083B2819986FA000294795 /* Teacher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		C8083B0D1994CC1900294795 /* SLSimpleFactoryModeDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SLSimpleFactoryModeDemoTests-Info.plist"; sourceTree = "<group>"; };
 		C8083B0F1994CC1900294795 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C8083B111994CC1900294795 /* SLSimpleFactoryModeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLSimpleFactoryModeDemoTests.m; sourceTree = "<group>"; };
+		C8083B1E19986F6100294795 /* HumanFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanFactory.h; sourceTree = "<group>"; };
+		C8083B1F19986F6100294795 /* HumanFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanFactory.m; sourceTree = "<group>"; };
+		C8083B2119986F7F00294795 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		C8083B2219986F7F00294795 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		C8083B2419986F9300294795 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		C8083B2519986F9300294795 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		C8083B2719986FA000294795 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		C8083B2819986FA000294795 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +131,14 @@
 				C8083AFC1994CC1900294795 /* ViewController.m */,
 				C8083AFE1994CC1900294795 /* Images.xcassets */,
 				C8083AED1994CC1900294795 /* Supporting Files */,
+				C8083B1E19986F6100294795 /* HumanFactory.h */,
+				C8083B1F19986F6100294795 /* HumanFactory.m */,
+				C8083B2119986F7F00294795 /* Human.h */,
+				C8083B2219986F7F00294795 /* Human.m */,
+				C8083B2719986FA000294795 /* Teacher.h */,
+				C8083B2819986FA000294795 /* Teacher.m */,
+				C8083B2419986F9300294795 /* Student.h */,
+				C8083B2519986F9300294795 /* Student.m */,
 			);
 			path = SLSimpleFactoryModeDemo;
 			sourceTree = "<group>";
@@ -250,8 +270,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8083AFD1994CC1900294795 /* ViewController.m in Sources */,
+				C8083B2919986FA000294795 /* Teacher.m in Sources */,
 				C8083AF71994CC1900294795 /* AppDelegate.m in Sources */,
+				C8083B2319986F7F00294795 /* Human.m in Sources */,
+				C8083B2019986F6100294795 /* HumanFactory.m in Sources */,
 				C8083AF31994CC1900294795 /* main.m in Sources */,
+				C8083B2619986F9300294795 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +480,7 @@
 				C8083B171994CC1900294795 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8083B181994CC1900294795 /* Build configuration list for PBXNativeTarget "SLSimpleFactoryModeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +489,7 @@
 				C8083B1A1994CC1900294795 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,7 +8,14 @@
 
 #import "ViewController.h"
 
+#import "HumanFactory.h"
+#import "Human.h"
+
 @interface ViewController ()
+
+@property (nonatomic, weak) IBOutlet UIButton *studentButton;
+@property (nonatomic, weak) IBOutlet UIButton *teacherButton;
+@property (nonatomic, weak) IBOutlet UILabel *showLabel;
 
 @end
 
@@ -17,13 +24,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)didTapButton:(id)sender
+{
+    Human *human;
+    if (sender == self.studentButton) {
+        human = [HumanFactory humanWithHumanIdentifier:@"student"];
+    } else {
+        human = [HumanFactory humanWithHumanIdentifier:@"teacher"];
+    }
+    self.showLabel.text = [human showPosition];
 }
 
 @end
