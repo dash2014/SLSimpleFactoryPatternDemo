@@ -12,7 +12,6 @@
 
 - (NSString *)showPosition
 {
-    [super showPosition];
     return @"I'm a student";
 }
 
